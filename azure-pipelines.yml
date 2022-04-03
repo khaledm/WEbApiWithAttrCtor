@@ -7,7 +7,10 @@ trigger:
 - master
 
 pool:
+  name: 'custom name'
   vmImage: 'windows-2019'
+  demands:
+   - Agent.OS -equals Windows 2019
 
 variables:
   buildConfiguration: 'Release'
