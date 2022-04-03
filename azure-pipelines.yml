@@ -20,7 +20,7 @@ steps:
     solution: '**/*.sln'
     restoreNugetPackages: true
     clean: true
-    platform: x86
+    configuration: $(buildConfiguration)
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
